@@ -1,20 +1,8 @@
-# Sistema_de_Estoque
-Sistema comercial simples (Produto, Cliente e Funcionário), utilizando os princípios básicos da POO em Java 8.2
+#Tela Cliente
 
-## Estrutura
-pacote de aplicação
-pacote de entidades
+![image](https://user-images.githubusercontent.com/58054086/111082517-80507380-84e7-11eb-924e-cb0d49e2e81f.png)
 
-## Funcionalidade
-Utiliza um menu onde são exibidos as seguintes opções
-cadastrar produto
-exibir produto
-cadastrar cliente
-exibir cliente
-cadastrar funcionario
-exibir funcionario
+#Tela Fornecedor
 
-## Principios da POO utilizados
-Abstração
-Encapsulamento
-Herança
+![image](https://user-images.githubusercontent.com/58054086/111082542-9c541500-84e7-11eb-830b-89ca56fef3c1.png)
+
