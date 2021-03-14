@@ -18,7 +18,3 @@ exibir funcionario
 Abstração
 Encapsulamento
 Herança
-
-![image](https://user-images.githubusercontent.com/58054086/111079599-6b6ce380-84d9-11eb-836c-f24dd7a4d55f.png)
-
-
