@@ -4,27 +4,27 @@ import javax.swing.JOptionPane;
 
 public class Cliente extends Pessoa{
     
-    private Double limite;
+    private String limite;
     private String codCliente;
     private String mesNascimento;
     private String primeiraCompra;
 
     public Cliente() {
-        super();
     }
 
-    public Cliente(Double limite, String codCliente, String mesNascimento, String primeiraCompra) {
+    public Cliente(String limite, String codCliente, String mesNascimento, String primeiraCompra) {
+        super();
         this.limite = limite;
         this.codCliente = codCliente;
         this.mesNascimento = mesNascimento;
         this.primeiraCompra = primeiraCompra;
     }
     
-    public Double getLimite() {
+    public String getLimite() {
         return limite;
     }
 
-    public void setLimite(Double limite) {
+    public void setLimite(String limite) {
         this.limite = limite;
     }
 
@@ -53,10 +53,10 @@ public class Cliente extends Pessoa{
     }
 
 
-    
+    // Remover depois
     public void cadastrarCliente(){
         super.cadastrar();
-        this.limite = Double.parseDouble(JOptionPane.showInputDialog("Entre com o limite"));
+        this.limite = JOptionPane.showInputDialog("Entre com o limite");
         this.codCliente = JOptionPane.showInputDialog("Código do cliente");
         this.mesNascimento = JOptionPane.showInputDialog("Entre com o mês de nascimento");
         this.primeiraCompra = JOptionPane.showInputDialog("Entre com a data da primeira compra");

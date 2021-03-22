@@ -9,6 +9,7 @@ public class Fornecedor {
     
     private Endereco end = new Endereco();
 
+    
     public String getNome() {
         return nome;
     }
@@ -41,6 +42,8 @@ public class Fornecedor {
         this.end = end;
     }
     
+    
+    // Remover depois
     public void cadastrarFornecedor(String nome, String endereco, String telefone, String contato){
         this.nome = nome;
         this.telefone = telefone;

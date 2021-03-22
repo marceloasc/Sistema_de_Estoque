@@ -50,6 +50,7 @@ public class Endereco {
         this.bairro = bairro;
     }
     
+    // Remover depois
     public void cadastrarEndereco(){ 
         this.endereco = JOptionPane.showInputDialog("Entre com o endereço");
         this.numero = JOptionPane.showInputDialog("Entre com o numero");

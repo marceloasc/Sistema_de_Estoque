@@ -15,6 +15,24 @@ public class Familia {
         this.tipo = tipo;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
+    
+    // Remover depois
     public void cadastrarFamilia(){
         this.nome = JOptionPane.showInputDialog("Familia do produto:");
         this.tipo = JOptionPane.showInputDialog("Tipo da familia:");

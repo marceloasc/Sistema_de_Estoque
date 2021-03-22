@@ -7,6 +7,7 @@ public class Pessoa {
     private String nome, CPF, RG, telefone;
     
     private Endereco end;
+    
 
     public Pessoa() {
         end = new Endereco();
@@ -52,6 +53,7 @@ public class Pessoa {
         this.end = end;
     }
     
+    // Remover depois
     public void cadastrar(){
         this.nome = JOptionPane.showInputDialog("Entre com o nome");
         this.CPF = JOptionPane.showInputDialog("Entre com o CPF");
@@ -59,6 +61,7 @@ public class Pessoa {
         this.telefone = JOptionPane.showInputDialog("Entre com o telefone");
         end.cadastrarEndereco();
     }
+    
     public void exibir(){
         JOptionPane.showMessageDialog(null, "Nome: " + this.nome +
                 "\nCPF: " + this.CPF +

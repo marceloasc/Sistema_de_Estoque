@@ -6,7 +6,7 @@ public class Produto {
     
     private String codigo;
     private String nome;
-    private double custo;
+    private String custo;
     private Fornecedor fornecedor = new Fornecedor();
     private String unidade;
     private String marca;
@@ -35,11 +35,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public double getCusto() {
+    public String getCusto() {
         return custo;
     }
 
-    public void setCusto(double custo) {
+    public void setCusto(String custo) {
         this.custo = custo;
     }
 
@@ -83,11 +83,16 @@ public class Produto {
         this.categoria = categoria;
     }
     
+    public int inserirNovoProduto(){
+        return 0;
+    }
+    
+    // Remover depois
     public void cadastrarProduto(){
         
         this.codigo = JOptionPane.showInputDialog("Codigo do Produto");
         this.nome = JOptionPane.showInputDialog("Entre com o nome do produto");
-        this.custo = Double.parseDouble(JOptionPane.showInputDialog("Entre com o curto do produto em R$"));
+        this.custo =JOptionPane.showInputDialog("Entre com o curto do produto em R$");
         familia.cadastrarFamilia();
         categoria.cadastrarCategoria();
         this.unidade = JOptionPane.showInputDialog("Entre com a unidade do produto");
