@@ -1,0 +1,11 @@
+Folha de pagamento
+Nome: Funcionario Teste
+----------------------------
+Salário Bruto: R$ 5000.0
+----------------------------
+Descontos
+----------------------------
+INSS: R$ 500.0
+IRRF: R$ 1012.5
+------------------------------
+Salário Líquido: R$ 3487.5

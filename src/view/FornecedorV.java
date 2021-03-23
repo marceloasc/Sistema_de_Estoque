@@ -26,40 +26,6 @@ public class FornecedorV extends javax.swing.JFrame {
         initComponents();
     }
 
-    public JTextField getTxtContatoFornecedor() {
-        return txtContatoFornecedor;
-    }
-
-    public JTextField getTxtEndBairroFornecedor() {
-        return txtEndBairroFornecedor;
-    }
-
-    public JTextField getTxtEndCidadeFornecedor() {
-        return txtEndCidadeFornecedor;
-    }
-
-    public JTextField getTxtEndFornecedor() {
-        return txtEndFornecedor;
-    }
-
-    public JTextField getTxtEndNumeroFornecedor() {
-        return txtEndNumeroFornecedor;
-    }
-
-    public JTextField getTxtEndUfFornecedor() {
-        return txtEndUfFornecedor;
-    }
-
-    public JTextField getTxtNomeFornecedor() {
-        return txtNomeFornecedor;
-    }
-
-    public JTextField getTxtTelefoneFornecedor() {
-        return txtTelefoneFornecedor;
-    }
-
-    
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -188,6 +154,11 @@ public class FornecedorV extends javax.swing.JFrame {
         btCancelarFornecedor.setBackground(new java.awt.Color(204, 204, 255));
         btCancelarFornecedor.setForeground(new java.awt.Color(0, 0, 0));
         btCancelarFornecedor.setText("Cancelar");
+        btCancelarFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCancelarFornecedorActionPerformed(evt);
+            }
+        });
 
         jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("LOCALIZAÇÃO:");
@@ -372,6 +343,7 @@ public class FornecedorV extends javax.swing.JFrame {
     private void btSalvarFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarFornecedorActionPerformed
         // TODO add your handling code here:
         BancoDeDadosJson.salvarArquivo("./Fornecedores.json", dadosForn);
+        this.dispose();
     }//GEN-LAST:event_btSalvarFornecedorActionPerformed
 
     private void txtTelefoneFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefoneFornecedorActionPerformed
@@ -405,6 +377,11 @@ public class FornecedorV extends javax.swing.JFrame {
         dadosForn = json.toJson(forn);
         
     }//GEN-LAST:event_btCadastrarFornecedorActionPerformed
+
+    private void btCancelarFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarFornecedorActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btCancelarFornecedorActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

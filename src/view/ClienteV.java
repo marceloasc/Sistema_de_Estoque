@@ -160,6 +160,11 @@ public class ClienteV extends javax.swing.JFrame {
         btCancelarCliente.setBackground(new java.awt.Color(204, 204, 255));
         btCancelarCliente.setForeground(new java.awt.Color(0, 0, 0));
         btCancelarCliente.setText("Cancelar");
+        btCancelarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btCancelarClienteActionPerformed(evt);
+            }
+        });
 
         btListarCliente.setBackground(new java.awt.Color(204, 204, 255));
         btListarCliente.setForeground(new java.awt.Color(0, 0, 0));
@@ -518,7 +523,13 @@ public class ClienteV extends javax.swing.JFrame {
     private void btSalvarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSalvarClienteActionPerformed
         // TODO add your handling code here:
         BancoDeDadosJson.salvarArquivo("./Clientes.json", dadosCli);
+        this.dispose();
     }//GEN-LAST:event_btSalvarClienteActionPerformed
+
+    private void btCancelarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarClienteActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+    }//GEN-LAST:event_btCancelarClienteActionPerformed
 
     /**
      * @param args the command line arguments

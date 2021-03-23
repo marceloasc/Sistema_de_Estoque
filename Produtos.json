@@ -1,2 +1,2 @@
 
-{"codigo":"456","nome":"Produto Teste","custo":"100.00","fornecedor":{"nome":"","telefone":"","contato":"","end":{"cidade":"","numero":"","uf":"","endereco":"","bairro":""}},"unidade":"20","marca":"Teste","familia":{"nome":"nome familia teste","tipo":"tipo familia teste"},"categoria":{"nome":"nome categoria teste","tipo":"tipo categoria teste","descricao":"descrição teste"}}
+{"codigo":"2434","nome":"Produto Teste","custo":"500.00","fornecedor":{"nome":"Fornecedor Tetste","telefone":"56565655","contato":"fornecedor.com","end":{"cidade":"Aracaju","numero":"76","uf":"SE","endereco":"Rua B","bairro":"Centro"}},"unidade":"20","marca":"Teste","familia":{"nome":"Teste","tipo":"Teste"},"categoria":{"nome":"Teste","tipo":"Teste","descricao":"Teste"}}
